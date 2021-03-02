@@ -20,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
 
         val handler = Handler(Looper.getMainLooper())
         val runnable = Runnable {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Menu::class.java)
             startActivity(intent)
             finish()
         }
@@ -28,7 +28,7 @@ class SplashActivity : AppCompatActivity() {
 
         binding.animationView.setOnClickListener(){
             handler.removeCallbacks(runnable)
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Menu::class.java)
             startActivity(intent)
             finish()
         }
